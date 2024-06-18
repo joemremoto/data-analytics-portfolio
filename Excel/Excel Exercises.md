@@ -36,3 +36,15 @@ In this exercise, I applied the most useful Excel formulas for data analysis.
 - Count-CountIf: The COUNT and COUNTIF formulas count the number of cells containing numbers, with COUNTIF adding the ability to count based on specific criteria, useful for data segmentation.
 
 - Days-NetworkDays: The DAYS and NETWORKDAYS formulas calculate the number of days between dates, with NETWORKDAYS excluding weekends and holidays, aiding in project management and timeline analysis.
+
+# XLOOKUP
+In another exercise, I used XLOOKUP in different scenarios. XLOOKUP simplifies many common data analytics tasks in Excel by providing a more intuitive and powerful way to search and retrieve data. Its versatility in handling errors, performing bi-directional lookups, and combining with other functions makes it an indispensable tool for data analysts.
+
+# Conditional Formatting
+Conditional formatting is a way to see trend and patterns in data.
+- Icon sets: Icon sets use different icons to represent the values in your data, making it easy to quickly interpret the data and identify trends, patterns, or outliers. The basic icons indicate up, down, and middle.
+- Color scales: rarely used. Color scales apply a gradient of colors to a range of cells, helping to visualize the distribution and variation of data values. It’s particularly useful for identifying patterns and trends across a dataset.
+- Data bars: rarely used. Data bars add a bar inside the cell, proportional to the value in the cell. This helps to compare values side-by-side within the same range, providing an immediate visual comparison.
+- Top/Bottom Rules: Top/bottom rules highlight the highest or lowest values in a dataset. This is useful for focusing on outliers, significant data points, or areas that require immediate attention.
+- Highlight Cell Rules: used all the time, especially Duplicate Values. Text that Contains is also handy. Highlight cells rules allow you to apply formatting to cells that meet specific criteria, such as being greater than, less than, equal to a certain value, or containing specific text. This is useful for quickly spotting and analyzing key data points.
+- Creating New Rules Using Formulas: allows for custom conditional formatting based on complex criteria. This provides flexibility to format cells based on specific conditions that are not covered by the built-in options.
