@@ -48,3 +48,25 @@ Conditional formatting is a way to see trend and patterns in data.
 - Top/Bottom Rules: Top/bottom rules highlight the highest or lowest values in a dataset. This is useful for focusing on outliers, significant data points, or areas that require immediate attention.
 - Highlight Cell Rules: used all the time, especially Duplicate Values. Text that Contains is also handy. Highlight cells rules allow you to apply formatting to cells that meet specific criteria, such as being greater than, less than, equal to a certain value, or containing specific text. This is useful for quickly spotting and analyzing key data points.
 - Creating New Rules Using Formulas: allows for custom conditional formatting based on complex criteria. This provides flexibility to format cells based on specific conditions that are not covered by the built-in options.
+
+# Charts
+In this exercise, I messed with charts in Excel using a sales dataset. The steps include creating a chart from the data, filtering to dictate which datapoints are shown, testing different chart styles, and customizing the chart elements. Charts in Excel are vital tools in data analytics because they turn complex datasets into visual stories that are easy to understand and interpret. They help identify trends, compare data, highlight outliers, summarize information, enhance decision-making, and engage stakeholders effectively. By leveraging various types of charts, analysts can provide deeper insights and more compelling narratives based on their data.
+However, I did not bother learning the "Format Chart Area" tool since it is not used in pactrice. Simply, there is no need to adjust the fill, border, shadow, glow etc. of the visualization.
+
+# Data Cleaning
+I used a US Presidents dataset in this exercise. There are several things to look for in cleaning data:
+1. Formatting Standardization: texts in the same column should have the same format such as all caps or initcap.
+2. Additional spaces in texts
+3. Currencies: importing in sql can be a problem
+4. Dates: always an issue. format correctly.
+5. Duplicates
+Here are the steps that I took in this exercise:
+1. Data > Data Tools > Remove Duplicates
+2. Insert a column to the right of 'president' and insert the standardized texts using PROPER(). Can also be upper or lower
+![proper](https://github.com/joemremoto/data-analytics-portfolio/assets/170858816/dbddbdf6-e74d-4f10-be12-89441e3b0e38)
+4. Standardize the 'party' column: apply filter > select only 'Republican' and 'Republicans' in 'party' > update 'republicans' to 'republican'
+5. Remove white spaces in 'vice' using TRIM(). This gets rid of extra spaces before, in the middle, and in the end of texts.
+![trim](https://github.com/joemremoto/data-analytics-portfolio/assets/170858816/e4d54711-3b79-4847-9d7e-110090a2c52e)
+6. Change 'salary' from currency to number. This will help sql to assign the correct dtype when importing.
+7. Change 'date created' and 'date updated' to short date
+8. Delete columns that will not be used.
