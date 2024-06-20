@@ -66,7 +66,6 @@ Here are the steps that I took in this exercise:
 ![proper](https://github.com/joemremoto/data-analytics-portfolio/assets/170858816/dbddbdf6-e74d-4f10-be12-89441e3b0e38)
 4. Standardize the 'party' column: apply filter > select only 'Republican' and 'Republicans' in 'party' > update 'republicans' to 'republican'
 5. Remove white spaces in 'vice' using TRIM(). This gets rid of extra spaces before, in the middle, and in the end of texts.
-![trim](https://github.com/joemremoto/data-analytics-portfolio/assets/170858816/e4d54711-3b79-4847-9d7e-110090a2c52e)
 6. Change 'salary' from currency to number. This will help sql to assign the correct dtype when importing.
 7. Change 'date created' and 'date updated' to short date
 8. Delete columns that will not be used.
